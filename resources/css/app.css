@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --brand-primary: 98 43 20;
+        --brand-secondary: 153 95 47;
+        --brand-muted: 151 143 102;
+        --brand-soft: 228 214 169;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        @apply bg-cream text-slate-900 dark:bg-slate-950 dark:text-slate-100;
+    }
+
+    [x-cloak] {
+        display: none !important;
+    }
+}
+
+@layer components {
+    .app-card {
+        @apply rounded-2xl border border-coffee-200/70 bg-white/90 shadow-soft dark:border-slate-800 dark:bg-slate-900/90;
+    }
+
+    .app-input {
+        @apply w-full rounded-xl border-coffee-200 bg-white text-sm text-slate-900 shadow-sm transition duration-300 placeholder:text-slate-400 focus:border-coffee-700 focus:ring-coffee-700 dark:border-slate-700 dark:bg-slate-950 dark:text-slate-100 dark:focus:border-coffee-300 dark:focus:ring-coffee-300;
+    }
+
+    .app-label {
+        @apply text-sm font-semibold text-slate-700 dark:text-slate-200;
+    }
+
+    .btn-primary {
+        @apply inline-flex items-center justify-center gap-2 rounded-xl border border-coffee-950 bg-coffee-950 px-4 py-2 text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:border-coffee-700 hover:bg-coffee-700 active:translate-y-0 dark:border-coffee-300 dark:bg-coffee-300 dark:text-slate-950 dark:hover:border-coffee-200 dark:hover:bg-coffee-200;
+    }
+
+    .btn-secondary {
+        @apply inline-flex items-center justify-center gap-2 rounded-xl border border-coffee-200 bg-white px-4 py-2 text-sm font-semibold text-coffee-950 transition duration-300 hover:-translate-y-0.5 hover:border-coffee-700 hover:text-coffee-700 active:translate-y-0 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:border-coffee-300 dark:hover:text-coffee-200;
+    }
+
+    .btn-danger {
+        @apply inline-flex items-center justify-center gap-2 rounded-xl border border-red-700 bg-red-700 px-4 py-2 text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:border-red-600 hover:bg-red-600 active:translate-y-0 dark:border-red-500 dark:bg-red-500 dark:text-white dark:hover:border-red-400 dark:hover:bg-red-400;
+    }
+
+    .badge {
+        @apply inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold;
+    }
+
+    .table-head {
+        @apply bg-coffee-950 text-left text-xs font-bold uppercase tracking-wide text-coffee-200 dark:bg-slate-950 dark:text-coffee-200;
+    }
+
+    .table-cell {
+        @apply border-b border-coffee-100 px-4 py-3 text-sm text-slate-700 dark:border-slate-800 dark:text-slate-200;
+    }
+}
