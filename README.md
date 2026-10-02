@@ -7,24 +7,7 @@ Aplikasi kasir warung kopi berbasis Laravel 13, Blade, Breeze Auth, Spatie Permi
 - Admin: `admin@example.com` / `password`
 - Cashier: `cashier@example.com` / `password`
 
-## Setup Lokal Laragon
-
-1. Buat database MySQL bernama `kasir_kopi` di phpMyAdmin atau MySQL client.
-2. Sesuaikan `.env`.
-
-```env
-APP_NAME="Kasir Kopi"
-APP_TIMEZONE=Asia/Jakarta
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=kasir_kopi
-DB_USERNAME=root
-DB_PASSWORD=
-FILESYSTEM_DISK=public
-```
-
-3. Jalankan instalasi.
+1. Jalankan instalasi.
 
 ```bash
 composer install
@@ -36,7 +19,7 @@ npm run build
 php artisan serve
 ```
 
-4. Buka `http://127.0.0.1:8000/login`.
+2. Buka `http://127.0.0.1:8000/login`.
 
 ## Mind Map Arsitektur
 
